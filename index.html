@@ -26,42 +26,50 @@
             </div>
             <div class="second">
                 <p>Let's do this</p>
-                <fieldset>
-                    <div class="cell">
-                        <label for="fist-name">First Name: </label>
-                        <input type="text" name="fist-name" id="fist-name">
+                <form action="post">
+                    <fieldset>
+                        <div class="cell">
+                            <label for="fist-name">*First Name: </label>
+                            <input type="text" name="fist-name" id="fist-name" placeholder="Jeickito" required>
+                            <span></span>
+                        </div>
+                        <div class="cell">
+                            <label for="last-name">*Last Name: </label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Jimenez" required>
+                            <span></span>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="cell">
+                            <label for="email">*Email: </label>
+                            <input type="email" name="email" id="email" placeholder="jeickito@gmail.com" required>
+                            <span></span>
+                        </div>
+                        <div class="cell">
+                            <label for="phone">Phone Number: </label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="cell">
+                            <label for="password">*Password: </label>
+                            <input type="password" name="password" id="password" required>
+                            <span></span>
+                        </div>
+                        <div class="cell">
+                            <label for="confirm">*Confirm Password: </label>
+                            <input type="password" name="confirm" id="confirm" required>
+                            <span></span>
+                        </div>
+                    </fieldset>
+                    <div class="third">
+                        <button type="submit"> Create Account</button>
+                        <p>Already have an account? <a href="#">Log in</a></p>
                     </div>
-                    <div class="cell">
-                        <label for="last-name">Last Name: </label>
-                        <input type="text" name="last-name" id="last-name">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div class="cell">
-                        <label for="email">Email: </label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="cell">
-                        <label for="phone">Phone Number: </label>
-                        <input type="tel" name="phone" id="phone">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div class="cell">
-                        <label for="password">Password: </label>
-                        <input type="password" name="password" id="password">
-                    </div>
-                    <div class="cell">
-                        <label for="confirm">Confirm Password: </label>
-                        <input type="password" name="confirm" id="confirm">
-                    </div>
-                </fieldset>
+                </form>
                 
             </div>
-            <div class="third">
-                <button type="submit"> Create Account</button>
-                <p>Already have an account? <a href="#">Log in</a></p>
-            </div>
+            
         </div>
     </div>
 </body>

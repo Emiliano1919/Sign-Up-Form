@@ -68,6 +68,23 @@
     margin-bottom: 5px;
 }
 
+input + span {
+    position: relative;
+  } 
+
+input:required + span::after {
+    font-size: 0.7rem;
+    font-family: Roboto;
+    position: absolute;
+    content: "Required";
+    color: white;
+    background-color: rgb(180, 180, 180);
+    border-radius: 3px;
+    padding: 5px 10px;
+    top: -57px;
+    right: 0px;
+}
+
 input {
     border: 1px solid #D6D9DC;
     border-radius: 4px;
