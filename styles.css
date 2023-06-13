@@ -19,6 +19,8 @@
     src: url('SourceCodePro-Medium.otf');
 
 }
+
+
 :root {
     font-family: 'Roboto', sans-serif;
 }
@@ -63,9 +65,11 @@
 .second{
     background-color: #FFF;
     box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 input + span {
@@ -78,11 +82,33 @@ input:required + span::after {
     position: absolute;
     content: "Required";
     color: white;
-    background-color: rgb(180, 180, 180);
+    background-color: #596d483a;
     border-radius: 3px;
     padding: 5px 10px;
-    top: -57px;
+    top: -58px;
     right: 0px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #665df5;
+    box-shadow: 0 0 2px #665df5;
+}
+  
+input:invalid + span::before {
+    position: absolute;
+    right:-18px;
+    top: -28px;
+    content: "✖";
+    color: red;
+}
+  
+input:valid + span::before {
+    position: absolute;
+    right:-18px;
+    top: -28px;
+    content: "✓";
+    color: green;
 }
 
 input {
@@ -107,6 +133,7 @@ input {
     height: 100%;
     padding-left: 3rem;
     padding-bottom: 40px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 }
 
 .third a {
