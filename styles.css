@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@font-face {
+    font-family: Abril;
+    font-weight: bold;
+    src: url('AbrilFatface-Regular.otf');
+}
+
+@font-face {
+    font-family: Norse;
+    src: url('Norse-Bold.otf');
+}
+
+
+
+
+@font-face {
+    font-family: Source;
+    font-weight: normal;
+    src: url('SourceCodePro-Medium.otf');
+
+}
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logoContainer {
+    position: absolute;
+    top: 200px;
+    background-color: black;
+    opacity: 0.7;
+    width: 387px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    border-radius: 1rem;
+    box-shadow: 0 0 15px 2px #DDD;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.first{
+    background-color: whitesmoke;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 33%;
+    justify-content: space-around;
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+.second{
+    background-color: #FFF;
+    box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+input {
+    border: 1px solid #D6D9DC;
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 14px;
+}
+.cell{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-left: 20px;
+    width: 33%;
+}
+
+
+
+.third{
+    background-color: whitesmoke;
+    height: 100%;
+    padding-left: 3rem;
+    padding-bottom: 40px;
+}
+
+.third a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+button {
+    background-color: #596D48;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}   
+
+
+.plants{
+    position: relative;
+}
+
+
+.odin{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: max-content;
+    max-height: 7em;
+}
+
+h1{
+    font-family: Norse;
+    font-size: 3rem;
+    color: white
+}
+
+p{
+    padding-left: 1em;
+    font-family: Source;
+    
+}
+label{
+    font-family: Source;
+    font-weight: bold;
+}
+
+.second p{
+    font-family: Source;
+    font-weight: bolder;
+    font-size: large;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    gap: 3rem;
+}
+
+
+
