@@ -25,6 +25,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 .logoContainer {
     position: absolute;
     top: 200px;
@@ -102,6 +104,16 @@ input:invalid + span::before {
     content: "✖";
     color: red;
 }
+/* 
+.inCase {
+    position: absolute;
+    right:-18px;
+    top: -28px;
+    fontco
+    content: "✖ not the same";
+    color: red;
+}
+*/
   
 input:valid + span::before {
     position: absolute;
